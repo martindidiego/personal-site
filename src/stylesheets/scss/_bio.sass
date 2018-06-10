@@ -2,6 +2,9 @@ $AVATAR_DIMENSION: 75px
 
 .bio
   &-avatar 
+    @include small
+      height: calc(#{$AVATAR_DIMENSION} - 10px)
+      width: calc(#{$AVATAR_DIMENSION} - 10px)
     background-color: #ececec
     background-image: url('../../images/me.jpg')
     background-position: center center
@@ -19,6 +22,9 @@ $AVATAR_DIMENSION: 75px
     justify-content: space-between
 
   &-details
+    align-self: flex-start
+    @include small
+      font-size: smaller
     h1
       margin-top: 0
       margin-bottom: 5px

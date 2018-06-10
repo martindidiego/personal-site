@@ -1,9 +1,15 @@
 $BODY_MAX_WIDTH: 1100px
-  
+
+*
+  box-sizing: border-box;
+
 html, body 
   height: 100%
 
 body 
+  @include medium-up
+    padding-top: 80px
+  padding-top: 30px
   font-family: $FONT_STACK
   color: $COLOR_TEXT_PRIMARY
   background-color: $COLOR_BG
@@ -43,10 +49,5 @@ ul
     margin-bottom: 10px
 
 #app 
-  height: 100%  
-  padding: 25px  
-  @include large
-    padding: f45px  
-    display: flex
-    flex-direction: column
-    justify-content: center    
+  height: auto
+  padding: 25px

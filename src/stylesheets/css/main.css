@@ -26,15 +26,22 @@
 .fadeIn {
   animation-name: fadeIn; }
 
+* {
+  box-sizing: border-box; }
+
 html, body {
   height: 100%; }
 
 body {
+  padding-top: 30px;
   font-family: "Source Sans Pro", "Avenir Next", "Helvetica", sans-serif;
   color: #383838;
   background-color: #fbfbfb;
   max-width: 1100px;
   margin: 0 auto; }
+  @media (min-width: 768px) {
+    body {
+      padding-top: 80px; } }
 
 h1 {
   font-weight: 100; }
@@ -67,14 +74,8 @@ ul {
     margin-bottom: 10px; }
 
 #app {
-  height: 100%;
+  height: auto;
   padding: 25px; }
-  @media (min-width: 1024px) {
-    #app {
-      padding: f45px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; } }
 
 .bio-avatar {
   background-color: #ececec;
@@ -85,6 +86,10 @@ ul {
   width: 75px;
   border-radius: 50%;
   margin-right: 20px; }
+  @media (max-width: 767px) {
+    .bio-avatar {
+      height: calc(75px - 10px);
+      width: calc(75px - 10px); } }
 
 .bio-wrapper {
   display: flex;
@@ -93,9 +98,13 @@ ul {
   flex-direction: row-reverse;
   justify-content: space-between; }
 
-.bio-details h1 {
-  margin-top: 0;
-  margin-bottom: 5px; }
-
-.bio-details-subtitle {
-  color: #949494; }
+.bio-details {
+  align-self: flex-start; }
+  @media (max-width: 767px) {
+    .bio-details {
+      font-size: smaller; } }
+  .bio-details h1 {
+    margin-top: 0;
+    margin-bottom: 5px; }
+  .bio-details-subtitle {
+    color: #949494; }
