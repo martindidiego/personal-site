@@ -1,0 +1,23 @@
+$MEDIUM_WIDTH: 768px
+$LARGE_WIDTH: 1024px
+
+// (0, Medium)
+@mixin small 
+  @media (max-width: #{$MEDIUM_WIDTH - 1px}) 
+    @content
+
+// [Medium, Large)
+@mixin medium 
+  @media (min-width: #{$MEDIUM_WIDTH}) and (max-width: #{$LARGE_WIDTH - 1px}) 
+    @content
+  
+// [Medium, infinity)
+@mixin medium-up 
+  @media (min-width: #{$MEDIUM_WIDTH}) 
+    @content
+
+// [Large, infinity)
+@mixin desktop 
+  @media (min-width: #{$LARGE_WIDTH}) 
+    @content
+
