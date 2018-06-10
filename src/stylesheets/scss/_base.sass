@@ -1,0 +1,40 @@
+$BODY_MAX_WIDTH: 1100px
+  
+html, body 
+  height: 100%
+
+body 
+  font-family: $FONT_STACK
+  color: $COLOR_TEXT_PRIMARY
+  background-color: $COLOR_BG
+  padding: 25px
+  max-width: $BODY_MAX_WIDTH
+  margin: 0 auto
+
+
+h1 
+  font-weight: 100
+
+h2
+  margin-bottom: 8px
+
+section
+  margin-bottom: 40px  
+
+  .item
+    margin-bottom: 35px
+    &-title
+      margin-bottom: 8px
+    &-subtitle
+      color: darken($COLOR_TEXT_SECONDARY, 20)
+    p
+      margin-top: 10px
+
+p
+  color: $COLOR_TEXT_SECONDARY
+
+#app 
+  display: flex
+  flex-direction: column
+  height: 100%
+  justify-content: center
