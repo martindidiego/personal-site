@@ -34,7 +34,7 @@ html, body {
 
 body {
   padding-top: 30px;
-  font-family: "Source Sans Pro", "Avenir Next", "Helvetica", sans-serif;
+  font-family: "Source Sans Pro", "-apple-system", "Helvetica", "Avenir Next", sans-serif;
   color: #383838;
   background-color: #fbfbfb;
   max-width: 1100px;

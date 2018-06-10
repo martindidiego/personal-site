@@ -62,5 +62,5 @@ typings/
 .sass-cache/
 *.css.map
 
-
-# End of https://www.gitignore.io/api/node,sass
+# Dist files
+dist

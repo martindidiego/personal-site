@@ -18,17 +18,20 @@
   },
   "homepage": "https://github.com/martindidiego/personal-site#readme",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.18.13",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
-    "gulp-cache": "^0.5.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.2",
-    "gulp-if": "^2.0.2",
+    "gulp-html-replace": "^1.6.2",
     "gulp-imagemin": "^3.4.0",
+    "gulp-rename": "^1.2.3",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
-    "gulp-useref": "^3.1.2",
     "run-sequence": "^2.2.0"
   }
 }
