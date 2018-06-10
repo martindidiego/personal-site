@@ -3,7 +3,7 @@
  * by a factor of 'delta'.
  *
  * @param {string} config.q - Query selector value to match against.
- * @param {number} config.delta - Multiplier between animation delays.
+ * @param {number} config.delta - Multiplier (in s) between animation delays.
  */
 const addAnimationDelay = ({ q, delta }) => {
   const animatedNodes = document.querySelectorAll(q);
