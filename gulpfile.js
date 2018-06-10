@@ -126,7 +126,10 @@ gulp.task("build-index", function() {
     .pipe(
       htmlreplace({
         css: "styles/bundle.css",
-        js: "scripts/bundle.js"
+        js: {
+          src: "scripts/bundle.js",
+          tpl: '<script src="%s" async></script>'
+        }
       })
     )
     .pipe(gulp.dest(config.paths.dist));
