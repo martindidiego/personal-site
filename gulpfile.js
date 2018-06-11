@@ -128,7 +128,7 @@ gulp.task("build-index", function() {
         css: "styles/bundle.css",
         js: {
           src: "scripts/bundle.js",
-          tpl: '<script src="%s" async></script>'
+          tpl: '<script src="%s" defer></script>'
         }
       })
     )
