@@ -61,6 +61,7 @@ typings/
 ### Sass ###
 .sass-cache/
 *.css.map
+src/stylesheets/css
 
 # Dist files
 dist
