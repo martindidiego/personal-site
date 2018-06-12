@@ -12,6 +12,9 @@ const babel = require("gulp-babel");
 const rename = require("gulp-rename");
 const concat = require("gulp-concat");
 const htmlreplace = require("gulp-html-replace");
+const rev = require("gulp-rev");
+const revRewrite = require("gulp-rev-rewrite");
+const revDelete = require("gulp-rev-delete-original");
 
 // Build config
 const config = {
@@ -108,6 +111,27 @@ gulp.task("build-scripts", () => {
     .pipe(gulp.dest(`${config.paths.dist}/scripts`));
 });
 
+// Adds file revisioning to all files for production
+gulp.task("file-rev", () => {
+  return gulp
+    .src(`${config.paths.dist}/**/*.{css,js,jpg,png,gif}`)
+    .pipe(rev())
+    .pipe(revDelete())
+    .pipe(gulp.dest(config.paths.dist))
+    .pipe(rev.manifest())
+    .pipe(gulp.dest(config.paths.dist));
+});
+
+// Replaces all file references with revved filenames
+gulp.task("replace-rev-refs", () => {
+  const manifest = gulp.src(`${config.paths.dist}/rev-manifest.json`);
+
+  return gulp
+    .src(`${config.paths.dist}/**/*`)
+    .pipe(revRewrite({ manifest }))
+    .pipe(gulp.dest(config.paths.dist));
+});
+
 // Build styles for production
 gulp.task("build-styles", () => {
   return gulp
@@ -120,7 +144,7 @@ gulp.task("build-styles", () => {
 });
 
 // Moves index.html into dist and replaces all script and style refs with production bundles
-gulp.task("build-index", function() {
+gulp.task("build-index", () => {
   gulp
     .src(`${config.paths.src}/index.html`)
     .pipe(
@@ -140,7 +164,7 @@ gulp.task("serve", callback => {
   runSequence(["sass", "browserSync", "watch"], callback);
 });
 
-// Clean dist + run Gulp tasks
+// Clean dist + run production build tasks
 gulp.task("build", callback => {
   runSequence(
     "clean:dist",
@@ -148,6 +172,8 @@ gulp.task("build", callback => {
     "build-scripts",
     ["compress-images", "move-favicon", "move-fonts"],
     "build-index",
+    "file-rev",
+    "replace-rev-refs",
     callback
   );
 });

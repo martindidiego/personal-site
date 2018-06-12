@@ -30,6 +30,9 @@
     "gulp-html-replace": "^1.6.2",
     "gulp-imagemin": "^3.4.0",
     "gulp-rename": "^1.2.3",
+    "gulp-rev": "^8.1.1",
+    "gulp-rev-delete-original": "^0.2.3",
+    "gulp-rev-rewrite": "^1.1.1",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
     "run-sequence": "^2.2.0"
