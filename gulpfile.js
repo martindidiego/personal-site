@@ -41,7 +41,7 @@ gulp.task("sass", () => {
 gulp.task("watch", ["browserSync", "sass"], () => {
   gulp.watch(`${config.paths.src}/stylesheets/scss/**/*.sass`, ["sass"]);
   gulp.watch(`${config.paths.src}/*.html`, browserSync.reload);
-  gulp.watch(`${config.paths.src}/js/**/*.js`, browserSync.reload);
+  gulp.watch(`${config.paths.src}/scripts/**/*.js`, browserSync.reload);
 });
 
 // Live reload via Browser Sync
