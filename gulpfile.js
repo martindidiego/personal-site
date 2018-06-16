@@ -101,6 +101,13 @@ gulp.task("move-favicon", () => {
     .pipe(gulp.dest(config.paths.dist));
 });
 
+// Move robots.txt into dist for production
+gulp.task("move-robots", () => {
+  return gulp
+    .src(`${config.paths.src}/robots.txt`)
+    .pipe(gulp.dest(config.paths.dist));
+});
+
 // Build scripts for production
 gulp.task("build-scripts", () => {
   return gulp
@@ -174,6 +181,7 @@ gulp.task("build", callback => {
     "build-index",
     "file-rev",
     "replace-rev-refs",
+    "move-robots",
     callback
   );
 });
