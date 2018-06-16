@@ -139,6 +139,11 @@ gulp.task("replace-rev-refs", () => {
     .pipe(gulp.dest(config.paths.dist));
 });
 
+// Deletes rev-manifest
+gulp.task("clean:rev-manifest", () =>
+  del.sync(`${config.paths.dist}/rev-manifest.json`)
+);
+
 // Build styles for production
 gulp.task("build-styles", () => {
   return gulp
@@ -181,6 +186,7 @@ gulp.task("build", callback => {
     "build-index",
     "file-rev",
     "replace-rev-refs",
+    "clean:rev-manifest",
     "move-robots",
     callback
   );
