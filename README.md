@@ -9,7 +9,6 @@ That I can update.
 
 To run locally, run `npm install` at the root. Next, run `npm start` which will do the following:
 
-- Start a watcher for SASS files
 - Start a [BrowserSync](https://browsersync.io/) instance
 - Start a watcher for any `.js`, `.sass`, and `.html` files which will reload the browser automaticlly when triggered
 
