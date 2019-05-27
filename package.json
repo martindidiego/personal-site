@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "gulp serve",
-    "build": "gulp build"
+    "build:site": "gulp build"
   },
   "repository": {
     "type": "git",

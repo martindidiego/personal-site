@@ -14,4 +14,4 @@ To run locally, run `npm install` at the root. Next, run `npm start` which will 
 
 ### Build for production
 
-To build the site for production, run `npm run build`. This will optimize and bundle all neccessary files into `dist/` to be served.
+To build the site for production, run `npm run build:site`. This will optimize and bundle all neccessary files into `dist/` to be served.
