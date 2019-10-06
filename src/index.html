@@ -1,46 +1,79 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-
+  <head>
     <!-- Google Analytics -->
     <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-85331739-1', 'auto');
-        ga('send', 'pageview');
+      (function(i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "https://www.google-analytics.com/analytics.js",
+        "ga"
+      );
+      ga("create", "UA-85331739-1", "auto");
+      ga("send", "pageview");
     </script>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Martin Di Diego</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Hey, I'm Martin Di Diego. I'm a software engineer at General Electric based in Miami, FL.">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Hey, I'm Martin Di Diego. I'm a software engineer at General Electric based in Miami, FL."
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="theme-color" content="#ffffff" />
 
     <!-- Preloads -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="preload" as="font">
-    <link href="images/me.jpg" rel="preload" as="image">
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
+      rel="preload"
+      as="font"
+    />
+    <link href="images/me.jpg" rel="preload" as="image" />
 
     <!-- OpenGraph meta -->
-    <meta property="og:title" content="Martin Di Diego">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Hey, I'm Martin Di Diego. I'm a software engineer at General Electric based in Miami, FL.">
-    <meta property="og:url" content="https://martindidiego.com/">
-    <meta property="og:image" content="https://martindidiego.com/images/me.jpg">
+    <meta property="og:title" content="Martin Di Diego" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:site_name"
+      content="Hey, I'm Martin Di Diego. I'm a software engineer at General Electric based in Miami, FL."
+    />
+    <meta property="og:url" content="https://martindidiego.com/" />
+    <meta
+      property="og:image"
+      content="https://martindidiego.com/images/me.jpg"
+    />
 
     <!-- Twitter meta -->
-    <meta name="twitter:title" content="Martin Di Diego">
-    <meta name="twitter:description" content="Hey, I'm Martin Di Diego. I'm a software engineer at General Electric based in Miami, FL.">
-    <meta name="twitter:image" content="https://martindidiego.com/images/me.jpg">
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Martin Di Diego" />
+    <meta
+      name="twitter:description"
+      content="Hey, I'm Martin Di Diego. I'm a software engineer at General Electric based in Miami, FL."
+    />
+    <meta
+      name="twitter:image"
+      content="https://martindidiego.com/images/me.jpg"
+    />
+    <meta name="twitter:card" content="summary" />
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
+      rel="stylesheet"
+    />
 
     <!-- build:js -->
     <script src="scripts/main.js" defer></script>
@@ -49,92 +82,131 @@
     <!--build:css -->
     <link rel="stylesheet" type="text/css" href="stylesheets/css/main.css" />
     <!-- endbuild -->
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="app">
-        <header>
-
-            <!-- BIO -->
-            <div class="bio-wrapper">
-                <div class="animated-wrapper">
-                    <div class="bio-avatar animated fadeIn"></div>
-                </div>
-                <div class="bio-details">
-                    <div class="animated-wrapper">
-                        <h1 class="animated fadeInUp">Martin Di Diego</h1>
-                    </div>
-                    <div class="animated-wrapper">
-                        <span class="bio-details-subtitle animated fadeInUp">Code + Design</span>
-                    </div>
-                </div>
+      <header>
+        <!-- BIO -->
+        <div class="bio-wrapper">
+          <div class="animated-wrapper">
+            <div class="bio-avatar animated fadeIn"></div>
+          </div>
+          <div class="bio-details">
+            <div class="animated-wrapper">
+              <h1 class="animated fadeInUp">Martin Di Diego</h1>
             </div>
-        </header>
-        <main>
+            <div class="animated-wrapper">
+              <span class="bio-details-subtitle animated fadeInUp"
+                >Code + Design</span
+              >
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <!-- ABOUT -->
+        <section id="about">
+          <div class="animated-wrapper">
+            <h2 class="animated fadeInUp">About</h2>
+          </div>
+          <div class="animated-wrapper">
+            <p class="animated fadeInUp">
+              Hey, I'm Martin
+              <span role="img" aria-label="Waving hand emoji">👋🏻</span>. I’m a
+              software engineer living in Miami, FL.
+            </p>
 
-            <!-- ABOUT -->
-            <section id="about">
-                <div class="animated-wrapper">
-                    <h2 class="animated fadeInUp">About</h2>
-                </div>
-                <div class="animated-wrapper">
-                    <p class="animated fadeInUp">
-                        Hey, I'm Martin <span role="img" aria-label="Waving hand emoji">👋🏻</span>. I’m a software engineer living in Miami, FL.
-                    </p>
+            <p class="animated fadeInUp">
+              I help build the next generation of your digital workplace at
+              <a
+                href="https://www.ge.com/"
+                title="General Electric Official Website"
+                >General Electric</a
+              >. I have a passion for building modern, flexible, and scalable
+              front-end applications.
+            </p>
 
-                    <p class="animated fadeInUp">
-                        I help build the next generation of your digital workplace at <a href="https://www.ge.com/" title="General Electric Official Website">General Electric</a>. 
-                        I have a passion for building modern, flexible, and scalable front-end applications.
-                    </p>
+            <p class="animated fadeInUp">
+              I strive for the intersection of design and function.
+            </p>
 
-                    <p class="animated fadeInUp">
-                        I strive for the intersection of design and function.
-                    </p>
+            <p class="animated fadeInUp">
+              I also write some words in
+              <a href="https://blog.martindidiego.com/" title="My personal blog"
+                >this corner</a
+              >
+              of the web.
+            </p>
+          </div>
+        </section>
 
-                    <p class="animated fadeInUp">
-                        I also write some words in <a href="https://blog.martindidiego.com/" title="My personal blog">this corner</a> of the web.
-                    </p>
-                </div>
-            </section>
-
-            <!-- CONTACT -->
-            <section id="contact">
-                <div class="animated-wrapper">
-                    <h2 class="animated fadeInUp">Contact</h2>
-                </div>
-                <p class="animated fadeInUp">
-                    You can find me in the following places on the web:
-
-                    <!-- SOCIAL -->
-                    <ul class="animated-wrapper">
-                        <li class="animated fadeInUp">
-                            <a href="https://twitter.com/martinaustn" target="_blank" aria-label="Visit my Twitter profile"
-                                title="Twitter profile">Twitter</a>
-                        </li>
-                        <li class="animated fadeInUp">
-                            <a href="https://www.instagram.com/martinaustn/" target="_blank" aria-label="Visit my Instagram profile"
-                                title="Instagram profile">Instagram</a>
-                        </li>
-                        <li class="animated fadeInUp">
-                            <a href="https://vsco.co/martinaustn/images/1" target="_blank" aria-label="Visit my VSCO profile"
-                                title="VSCO profile">VSCO</a>
-                        </li>
-                        <li class="animated fadeInUp">
-                            <a href="https://github.com/martindidiego" target="_blank" aria-label="Visit my Github profile"
-                                title="Github profile">Github</a>
-                        </li>
-                        <li class="animated fadeInUp">
-                            <a href="https://www.linkedin.com/in/martindidiego/" target="_blank" aria-label="Visit my LinkedIn profile"
-                                title="LinkedIn profile">LinkedIn</a>
-                        </li>
-                        <li class="animated fadeInUp">
-                            <a href="mailto:didiegomartin@gmail.com" aria-label="My Email" title="My Email">Email</a>
-                        </li>
-                    </ul>
-                </p>
-            </section>
-        </main>
+        <!-- CONTACT -->
+        <section id="contact">
+          <div class="animated-wrapper">
+            <h2 class="animated fadeInUp">Contact</h2>
+          </div>
+          <p class="animated fadeInUp">
+            You can find me in the following places on the web:
+          </p>
+          <!-- SOCIAL -->
+          <ul class="animated-wrapper">
+            <li class="animated fadeInUp">
+              <a
+                href="https://twitter.com/martinaustn"
+                target="_blank"
+                aria-label="Visit my Twitter profile"
+                title="Twitter profile"
+                >Twitter</a
+              >
+            </li>
+            <li class="animated fadeInUp">
+              <a
+                href="https://www.instagram.com/martinaustn/"
+                target="_blank"
+                aria-label="Visit my Instagram profile"
+                title="Instagram profile"
+                >Instagram</a
+              >
+            </li>
+            <li class="animated fadeInUp">
+              <a
+                href="https://vsco.co/martinaustn/images/1"
+                target="_blank"
+                aria-label="Visit my VSCO profile"
+                title="VSCO profile"
+                >VSCO</a
+              >
+            </li>
+            <li class="animated fadeInUp">
+              <a
+                href="https://github.com/martindidiego"
+                target="_blank"
+                aria-label="Visit my Github profile"
+                title="Github profile"
+                >Github</a
+              >
+            </li>
+            <li class="animated fadeInUp">
+              <a
+                href="https://www.linkedin.com/in/martindidiego/"
+                target="_blank"
+                aria-label="Visit my LinkedIn profile"
+                title="LinkedIn profile"
+                >LinkedIn</a
+              >
+            </li>
+            <li class="animated fadeInUp">
+              <a
+                href="mailto:didiegomartin@gmail.com"
+                aria-label="My Email"
+                title="My Email"
+                >Email</a
+              >
+            </li>
+          </ul>
+        </section>
+      </main>
     </div>
-</body>
-
+  </body>
 </html>
